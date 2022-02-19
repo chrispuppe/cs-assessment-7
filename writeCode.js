@@ -57,4 +57,22 @@ function isPangram(str) {
 //     ))
 
 // Longest Word
+function findLongestWord(arr) {
+    let longestWord = 0
 
+    for(let i = 0; i < arr.length; i++) {
+        const str = arr[i]
+        const stringLength = str.length
+        if(stringLength > longestWord){
+            longestWord = stringLength
+        }
+    }
+    return longestWord
+}
+// console.log(findLongestWord([
+//     'if', 'splendid', 'jammies', 'This'
+// ]))
+// console.log(findLongestWord([
+//     'if', 'splendid', 'jammies', 'This',
+//     'that', 'maximum', 'tremendous'
+// ]))
