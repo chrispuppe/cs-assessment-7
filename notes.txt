@@ -1,0 +1,24 @@
+extraLargeArray:
+insert 658.9975 ms
+append 2.557 ms
+
+largeArray:
+insert 6.5971 ms
+append 374.9 μs
+
+mediumArray:
+insert 122.8 μs
+append 101.7 μs
+
+smallArray:
+insert 33.1 μs
+append 67.6 μs
+
+tinyArray:
+insert 24.5 μs
+append 62.1 μs
+
+The append function seems to be slower when the nuber of inputs is low. But as the number of inputs increases we see that the insert function becomes significanty slower. The only major difference between these two functions are the array functions of 'push' and 'unshift'. Because of the way that unshift functions it is O(n) and push is O(1) for time. The unshift. Then when you put them in a for loop that is O(n) you then get n*n and n*1 for the insert and append functions respectivly
+
+site used for explaination:
+https://medium.com/@brayce1996/time-complexity-analysis-of-javascript-array-unshift-74930aaa2f6
