@@ -36,7 +36,7 @@ function hasUniqueChars(str) {
 
 
 // Pangram Sentence
-// time complexity O(n)
+// time complexity O(n) or linear
 function isPangram(str) {
     let alphabet = 'abcdefghijklmnopqrstuvwxyz'
     let removeWhite = /\s/g
@@ -57,6 +57,7 @@ function isPangram(str) {
 //     ))
 
 // Longest Word
+// time complexity O(n) or linear
 function findLongestWord(arr) {
     let longestWord = 0
 
